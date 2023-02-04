@@ -1,23 +1,20 @@
-import React from 'react';
+< !doctype html >
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <link rel="icon" href="./favicon.ico" />
+            <meta name="viewport" content="width=device-width,initial-scale=1" />
+            <meta name="theme-color" content="#000000" />
+            <meta name="description" content="Web site created using create-react-app" />
+            <link rel="apple-touch-icon" href="./logo192.png" />
+            <link rel="manifest" href="https://lux-store.herokuapp.com/manifest.json" />
+            <title>React App</title>
+            <link href="./static/css/main.ecd43152.css" rel="stylesheet"/>
 
-const LazyRetry = (componentImport) => {
-    return new Promise((resolve, reject) => {
-        // check if the window has already been refreshed
-        const hasRefreshed = JSON.parse(
-            window.sessionStorage.getItem('retry-lazy-refreshed') || 'false'
-        );
-        // try to import the component
-        componentImport().then((component) => {
-            window.sessionStorage.setItem('retry-lazy-refreshed', 'false'); // success so reset the refresh
-            resolve(component);
-        }).catch((error) => {
-            if (!hasRefreshed) { // not been refreshed yet
-                window.sessionStorage.setItem('retry-lazy-refreshed', 'true'); // we are now going to refresh
-                return window.location.reload(); // refresh the page
-            }
-            reject(error); // Default error behaviour as already tried refresh
-        });
-    });
-};
-
-export default LazyRetry;
+            <script defer="defer" src="./static/js/main.2ceaaa31.js"></script>
+        </head>
+        <body>
+            <noscript>You need to enable JavaScript to run this app.</noscript>
+            <div id="root"></div>
+        </body>
+    </html>
