@@ -21,6 +21,8 @@ import { axiosClient } from "./hooks/useHttp";
 import { CART_API } from "./constants/api";
 import { object } from "yup";
 import { CUSTOMER_INFO, SESSION_ACCESS_TOKEN } from "./utils/sessionHelper";
+import "./src/sass/app.scss";
+import "./src/sass/common.scss";
 import LazyRetry from "./LazyRetry";
 
 // admin

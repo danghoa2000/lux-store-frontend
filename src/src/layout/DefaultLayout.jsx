@@ -3,8 +3,6 @@ import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Header from "../../components/partial/header/Header";
 import Footer from "../../components/partial/footer/Footer";
 import { createBrowserHistory } from "history";
-import "../sass/app.scss";
-import "../sass/common.scss";
 import { Button, Divider, Drawer, IconButton, Typography } from "@mui/material";
 import { Add, Clear, Remove, ShoppingCart } from "@mui/icons-material";
 import { formatPrice } from "../../utils/helper";
