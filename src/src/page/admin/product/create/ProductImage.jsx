@@ -25,7 +25,7 @@ const ProductImage = (props) => {
                 {t('product.list.table.image')}
             </Typography>
 
-            <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10}>
+            <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10} className="dark__mode custom__form">
                 <UploadFile
                     name={"file"}
                     initValue={initvalue}

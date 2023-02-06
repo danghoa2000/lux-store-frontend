@@ -34,7 +34,10 @@ const FormFilter = (props) => {
     const FORM_FILTER = useMemo(() => {
         const formFilter = [];
         Object.keys(headCells).forEach((headCell, index) => {
-            if (headCells[headCell].id !== 'province_id' && headCells[headCell].id !== 'district_id' && headCells[headCell].id !== 'commune_id') {
+            if (headCells[headCell].id !== 'province_id' && 
+            headCells[headCell].id !== 'district_id' && 
+            headCells[headCell].id !== 'commune_id' &&
+            headCells[headCell].id !== 'image' ) {
                 if (headCells[headCell].type === 'date') {
                     formFilter.push(
                         <Grid item xs={4} key={index}>
@@ -215,7 +218,12 @@ const FormFilter = (props) => {
     return (
         <div>
             <form onSubmit={handleSubmit(onFinish)}>
-                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10}>
+                <Grid
+                    container
+                    sx={{ margin: 0, padding: 1, width: "100%" }}
+                    spacing={10}
+                    className="dark__mode custom__form"
+                >
                     {FORM_FILTER}
                     <div className='d-flex w-100'>
                         <Button variant="contained" type='submit' className='m-1' style={{ background: "#28a745" }}>

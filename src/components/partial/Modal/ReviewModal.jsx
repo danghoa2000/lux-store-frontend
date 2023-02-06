@@ -85,7 +85,7 @@ const ReviewModal = ({
     return (
         <div>
             <div style={{ display: "flex", alignItems: "center" }}>
-                <div style={{ marginRight: 10 }} className="dark__mode">
+                <div style={{ marginRight: 10 }} className="light__mode">
                     <IconButton aria-label="back">
                         <Reply />
                     </IconButton>
@@ -95,7 +95,6 @@ const ReviewModal = ({
                     id="modal-modal-title"
                     variant="h6"
                     component="h2"
-                    color="#fff"
                 >
                     Product review
                 </Typography>
@@ -105,7 +104,7 @@ const ReviewModal = ({
                 <div className="product__review__avatar">
                     <img src={API_BASE_URL + product?.product?.image} alt="" />
                 </div>
-                <Typography variant="h6" className="text-white">
+                <Typography variant="h6" alignSelf="center">
                     {product?.product?.name}
                 </Typography>
             </div>
@@ -114,6 +113,7 @@ const ReviewModal = ({
                 container
                 sx={{ margin: 0, padding: 1, width: "100%" }}
                 spacing={10}
+                className="custom__form"
             >
                 <Grid item xs={12} className="box_product__review">
                     <Box
@@ -122,7 +122,7 @@ const ReviewModal = ({
                             display: "flex",
                             alignItems: "center",
                         }}
-                        className="dark__mode product__review__rate"
+                        className="product__review__rate"
                     >
                         <Controller
                             name="rate"
@@ -177,7 +177,6 @@ const ReviewModal = ({
                         render={({ field }) => (
                             <FormControl variant="standard">
                                 <TextField
-                                    className="text-white"
                                     {...field}
                                     placeholder="Enter your comment"
                                     onBlur={(event) => {

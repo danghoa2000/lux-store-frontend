@@ -74,7 +74,7 @@ const ProductPropertyItem = ({
                 />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', padding: 2, justifyContent: 'space-between' }}>
-                <Button variant="contained" style={{ padding: 3, minWidth: 'unset', color: 'red', background: 'white' }}
+                <Button variant="contained" className='color-red' style={{ padding: 3, minWidth: 'unset', color: 'red', background: 'white' }}
                     onClick={() => removeProperty(index)}
                 ><RemoveCircle /></Button>
                 <Button variant="contained" style={{ padding: 3, minWidth: 'unset' }}><AddCircleSharp /></Button>

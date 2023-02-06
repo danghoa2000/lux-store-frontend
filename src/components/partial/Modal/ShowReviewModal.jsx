@@ -65,7 +65,7 @@ const ShowReviewModal = ({ productId, setStatus, setShowNoti }) => {
     return (
         <div>
             <div style={{ display: "flex", alignItems: "center" }}>
-                <div style={{ marginRight: 10 }} className="dark__mode">
+                <div style={{ marginRight: 10 }} className="light__mode">
                     <IconButton aria-label="back">
                         <Reply />
                     </IconButton>
@@ -75,7 +75,6 @@ const ShowReviewModal = ({ productId, setStatus, setShowNoti }) => {
                     id="modal-modal-title"
                     variant="h6"
                     component="h2"
-                    color="#fff"
                 >
                     Product review
                 </Typography>
@@ -85,13 +84,13 @@ const ShowReviewModal = ({ productId, setStatus, setShowNoti }) => {
                 <div className="product__review__avatar">
                     <img src={API_BASE_URL + review?.image} alt="" />
                 </div>
-                <Typography variant="h6" className="text-white">
+                <Typography variant="h6" alignSelf={"center"}>
                     {review?.name}
                 </Typography>
             </div>
             <Divider
                 style={{
-                    borderColor: "rgb(246, 249, 252)",
+                    borderColor: "#bac4cf",
                     borderBottomWidth: "thin",
                     opacity: 0.5,
                     margin: 10
@@ -101,6 +100,7 @@ const ShowReviewModal = ({ productId, setStatus, setShowNoti }) => {
                 container
                 sx={{ margin: 0, padding: 1, width: "100%" }}
                 spacing={10}
+                className="custom__form"
             >
                 <Grid item xs={12} className="box_product__review">
                     <Box
@@ -108,7 +108,7 @@ const ShowReviewModal = ({ productId, setStatus, setShowNoti }) => {
                             display: "flex",
                             alignItems: "center",
                         }}
-                        className="dark__mode product__review__rate"
+                        className="product__review__rate"
                     >
                         <List sx={{ width: "100%" }}>
                             <div>
@@ -129,7 +129,7 @@ const ShowReviewModal = ({ productId, setStatus, setShowNoti }) => {
                                                 style={{
                                                     fontWeight: "bold",
                                                 }}
-                                                className="mx-2 text-white"
+                                                className="mx-2"
                                             >
                                                 {review?.customer_name}
                                             </span>
@@ -145,7 +145,7 @@ const ShowReviewModal = ({ productId, setStatus, setShowNoti }) => {
                                                         }
                                                         readOnly
                                                     />
-                                                    <span className="font-bold mx-2 text-white" style={{ fontSize: 14 }}>
+                                                    <span className="font-bold mx-2" style={{ fontSize: 14 }}>
                                                         {review?.created_at
                                                             ? format(
                                                                   parseISO(

@@ -48,7 +48,7 @@ const ManufacturerCreate = (props) => {
                 <Typography variant="h5" className='cart_admin_title' gutterBottom>
                     Basic information
                 </Typography>
-                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10}>
+                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10} className="dark__mode custom__form">
                     <Grid item xs={6}>
                         <Controller
                             name="manufacturer_code"
@@ -104,7 +104,7 @@ const ManufacturerCreate = (props) => {
                     Contact infomation
                 </Typography>
 
-                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10}>
+                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10} className="dark__mode custom__form">
                     <Grid item xs={6}>
                         <Controller
                             name="telephone"
@@ -163,7 +163,7 @@ const ManufacturerCreate = (props) => {
                     Setting
                 </Typography>
 
-                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10}>
+                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10} className="dark__mode custom__form">
                     <Grid item xs={6}>
                         <div className='d-inline'>
                             <Controller

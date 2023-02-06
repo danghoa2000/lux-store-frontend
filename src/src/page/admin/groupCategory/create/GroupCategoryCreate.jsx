@@ -84,6 +84,7 @@ const GroupCategoryCreate = (props) => {
                         container
                         sx={{ margin: 0, padding: 1, width: "100%" }}
                         spacing={10}
+                        className="dark__mode custom__form"
                     >
                         <Grid item xs={12}>
                             <Typography
@@ -198,6 +199,7 @@ const GroupCategoryCreate = (props) => {
                         container
                         sx={{ margin: 0, padding: 1, width: "100%" }}
                         spacing={10}
+                        className="dark__mode custom__form"
                     >
                         <Grid item xs={6}>
                             <div className="d-inline">

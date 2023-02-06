@@ -90,6 +90,7 @@ const AccountUpdate = (props) => {
                         container
                         sx={{ margin: 0, padding: 1, width: "100%" }}
                         spacing={10}
+                        className="dark__mode custom__form"
                     >
                         <Grid item xs={6}>
                             <Controller
@@ -215,6 +216,7 @@ const AccountUpdate = (props) => {
                         container
                         sx={{ margin: 0, padding: 1, width: "100%" }}
                         spacing={10}
+                        className="dark__mode custom__form"
                     >
                         <Grid item xs={6}>
                             <Controller
@@ -292,6 +294,7 @@ const AccountUpdate = (props) => {
                                             }}
                                             label={"province"}
                                             size="small"
+                                            className="text-white"
                                         >
                                             <MenuItem value={-1}>
                                                 {"select province"}
@@ -331,6 +334,7 @@ const AccountUpdate = (props) => {
                                             }}
                                             label={"district_id"}
                                             size="small"
+                                            className="text-white"
                                         >
                                             <MenuItem value={-1}>
                                                 {"select district"}
@@ -369,6 +373,7 @@ const AccountUpdate = (props) => {
                                             {...field}
                                             label={"commune_id"}
                                             size="small"
+                                            className="text-white"
                                         >
                                             <MenuItem value={-1}>
                                                 {"select commune"}
@@ -430,6 +435,7 @@ const AccountUpdate = (props) => {
                         container
                         sx={{ margin: 0, padding: 1, width: "100%" }}
                         spacing={10}
+                        className="dark__mode custom__form"
                     >
                         <Grid item xs={6}>
                             <div className="d-inline">

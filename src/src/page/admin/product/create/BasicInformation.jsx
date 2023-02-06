@@ -26,7 +26,7 @@ const BasicInformation = (props) => {
             <Typography variant="h5" className='cart_admin_title' gutterBottom>
                 Basic information
             </Typography>
-            <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10}>
+            <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10} className="dark__mode custom__form">
                 <Grid item xs={6}>
                     <Typography variant="h6" className='cart_admin_title' gutterBottom>
                         {t('product.list.table.avatar')}

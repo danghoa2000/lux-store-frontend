@@ -49,6 +49,7 @@ const SaleOff = ({
                             {...field}
                             label={<div>{t('product.list.table.manufacturer_id')}<span className='required'></span></div>}
                             size="small"
+                            className="text-white"
                         >
                             <MenuItem key={-1} value={-1}>
                                 {"Select sale type"}

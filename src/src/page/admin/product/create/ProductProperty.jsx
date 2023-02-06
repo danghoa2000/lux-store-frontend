@@ -319,6 +319,7 @@ const ProductProperty = (props, ref) => {
                 container
                 sx={{ margin: 0, width: "100%", padding: 0 }}
                 spacing={10}
+                className="dark__mode custom__form"
             >
                 <Grid item xs={10}>
                     <Grid>

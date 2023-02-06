@@ -105,7 +105,7 @@ const CreateAttributeValueModal = ({
                 Create new value
             </Typography>
             <form>
-                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10}>
+                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10} className="dark__mode custom__form">
                     <Grid item xs={12}>
                         <div className='d-inline'>
                             <Controller
@@ -117,6 +117,8 @@ const CreateAttributeValueModal = ({
                                             {...field}
                                             label={<div>{"Group category"}<span className='required'></span></div>}
                                             size="small"
+                                            className="text-white"
+
                                             value={groupCategoryId}
                                             onChange={e => {
                                                 setGroupCategoryId(e.target.value)
@@ -155,6 +157,7 @@ const CreateAttributeValueModal = ({
                                         {...field}
                                         label={<div>{"attribute"}<span className='required'></span></div>}
                                         size="small"
+                                        className="text-white"
                                         value={attribute}
                                         onChange={e => {
                                             setAttribute(e.target.value)

@@ -79,7 +79,7 @@ const AdminLayout = () => {
     const redirect = (item) => navigate(item);
 
     const logout = useCallback(async () => {
-        await axiosClient.get(LOGIN_API.LOGOUT);
+        await axiosClient.post(LOGIN_API.LOGOUT);
         setAuth({});
         window.sessionStorage.clear(ADMIN_SESSION_ACCESS_TOKEN);
         navigate("/admin/login");
@@ -173,7 +173,7 @@ const AdminLayout = () => {
 
     return (
         <div>
-            <AppBar position="fixed">
+            <AppBar position="fixed" className="app__bar__hearder">
                 <Container maxWidth="xl" className="admin__header">
                     <Toolbar disableGutters>
                         <div
@@ -284,7 +284,7 @@ const AdminLayout = () => {
                                     setActiveMenu(1);
                                     redirect("dashboard");
                                 }}
-                                className={`${activeMenu == 1 ? "active" : ""}`}
+                                className={`${activeMenu == 1 ? "active" : ""} text-white`}
                             >
                                 <ListItemIcon className="mx-2">
                                     <DashboardOutlined fontSize="small" />
@@ -296,7 +296,7 @@ const AdminLayout = () => {
                                     setActiveMenu(2);
                                     redirect("account");
                                 }}
-                                className={`${activeMenu == 2 ? "active" : ""}`}
+                                className={`${activeMenu == 2 ? "active" : ""} text-white`}
                             >
                                 <ListItemIcon className="mx-2">
                                     <AccountBalanceOutlined fontSize="small" />
@@ -308,7 +308,7 @@ const AdminLayout = () => {
                                     setActiveMenu(3);
                                     redirect("manufacturer");
                                 }}
-                                className={`${activeMenu == 3 ? "active" : ""}`}
+                                className={`${activeMenu == 3 ? "active" : ""} text-white`}
                             >
                                 <ListItemIcon className="mx-2">
                                     <AccountTreeOutlined fontSize="small" />
@@ -320,7 +320,7 @@ const AdminLayout = () => {
                                     setActiveMenu(4);
                                     redirect("group-category");
                                 }}
-                                className={`${activeMenu == 4 ? "active" : ""}`}
+                                className={`${activeMenu == 4 ? "active" : ""} text-white`}
                             >
                                 <ListItemIcon className="mx-2">
                                     <MotionPhotosAutoOutlined fontSize="small" />
@@ -332,7 +332,7 @@ const AdminLayout = () => {
                                     setActiveMenu(5);
                                     redirect("categories");
                                 }}
-                                className={`${activeMenu == 5 ? "active" : ""}`}
+                                className={`${activeMenu == 5 ? "active" : ""} text-white`}
                             >
                                 <ListItemIcon className="mx-2">
                                     <BrandingWatermarkOutlined fontSize="small" />
@@ -350,7 +350,7 @@ const AdminLayout = () => {
                                     setActiveMenu(6);
                                     redirect("product");
                                 }}
-                                className={`${activeMenu == 6 ? "active" : ""}`}
+                                className={`${activeMenu == 6 ? "active" : ""} text-white`}
                             >
                                 <ListItemIcon className="mx-2">
                                     <DesktopMacOutlined fontSize="small" />
@@ -368,7 +368,7 @@ const AdminLayout = () => {
                                     setActiveMenu(7);
                                     redirect("orders");
                                 }}
-                                className={`${activeMenu == 7 ? "active" : ""}`}
+                                className={`${activeMenu == 7 ? "active" : ""} text-white`}
                             >
                                 <ListItemIcon className="mx-2">
                                     <LocalMallOutlined fontSize="small" />
@@ -380,7 +380,7 @@ const AdminLayout = () => {
                                     setActiveMenu(8);
                                     redirect("coupon");
                                 }}
-                                className={`${activeMenu == 8 ? "active" : ""}`}
+                                className={`${activeMenu == 8 ? "active" : ""} text-white`}
                             >
                                 <ListItemIcon className="mx-2">
                                     <VignetteOutlined fontSize="small" />

@@ -117,6 +117,7 @@ const RegisterAccountModal = ({ setShowNoti, setStatus, setOpen, setType }) => {
                 container
                 sx={{ margin: 0, padding: 1, width: "100%" }}
                 spacing={10}
+                className="custom__form"
             >
                 <Grid item xs={12}>
                     <Controller

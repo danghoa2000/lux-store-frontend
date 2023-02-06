@@ -83,6 +83,7 @@ const Home = ({
                         container
                         sx={{ margin: 0, width: "100%", padding: 0 }}
                         spacing={2}
+                        className="dark__mode custom__form"
                     >
                         <Grid item xs={3} style={{ paddingLeft: 0 }}>
                             <Controller

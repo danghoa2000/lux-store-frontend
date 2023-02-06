@@ -38,6 +38,7 @@ const ProductAttributeValue = ({
         <Autocomplete
             sx={{ width: 170 }}
             name="attributeValue"
+            className="select_dark_mode"
             open={open}
             onOpen={() => {
                 setOpen(true);

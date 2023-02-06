@@ -87,31 +87,33 @@ const OrderDetail = ({
                 <div className="order__header">
                     <div className="order__id">{`Order ID: ${order?.id}`}</div>
                     <div className="order__placed">
-                        {`Placed on: ${
-                            order?.created_at
+                        {`Placed on: ${order?.created_at
                                 ? format(
-                                      parseISO(order?.created_at),
-                                      "dd MMM, yyyy"
-                                  )
+                                    parseISO(order?.created_at),
+                                    "dd MMM, yyyy"
+                                )
                                 : ""
-                        }`}
+                            }`}
                     </div>
                     <div className="order__finish">
-                        {`Delivered on: ${
-                            order?.updated_at
+                        {`Delivered on: ${order?.updated_at
                                 ? format(
-                                      parseISO(order?.updated_at),
-                                      "dd MMM, yyyy"
-                                  )
+                                    parseISO(order?.updated_at),
+                                    "dd MMM, yyyy"
+                                )
                                 : ""
-                        }`}
+                            }`}
                     </div>
                     <div className="order__tool">
                         <IconButton
                             aria-label="edit"
                             size="small"
                             onClick={() => {
-                                return order?.status == 3 ? {} : setOpen(true);
+                                if (order?.status == 3) {
+                                    return;
+                                }
+                                setType(1); 
+                                setOpen(true);
                             }}
                         >
                             <Edit fontSize="inherit" />
@@ -162,8 +164,7 @@ const OrderDetail = ({
                                     </div>
 
                                     <div className="order__product__item-properties">
-                                        {`Product properties: ${
-                                            item?.property_value &&
+                                        {`Product properties: ${item?.property_value &&
                                             Object.values(
                                                 item.property_value
                                             ).map(
@@ -171,14 +172,14 @@ const OrderDetail = ({
                                                     val.attribute_value_name +
                                                     ", "
                                             )
-                                        }`}
+                                            }`}
                                     </div>
                                     {order?.status == STATUS_ORDER.SUCCESS ? (
                                         <div className="order__product__item-properties">
                                             {item?.product?.customer_review &&
-                                            JSON.parse(
-                                                item?.product?.customer_review
-                                            ).includes(user?.id) ? (
+                                                JSON.parse(
+                                                    item?.product?.customer_review
+                                                ).includes(user?.id) ? (
                                                 <Button
                                                     variant="contained"
                                                     className="btn__view_cart"
@@ -207,8 +208,8 @@ const OrderDetail = ({
                                             )}
                                         </div>
                                     ) : (<div className="order__product__item-properties"></div>)
-                                
-                                }
+
+                                    }
                                 </div>
                             );
                         })}
@@ -300,7 +301,7 @@ const OrderDetail = ({
                                     >
                                         {formatPrice(
                                             (order?.price || 0) +
-                                                (order?.price_discount || 0)
+                                            (order?.price_discount || 0)
                                         )}
                                     </Typography>
                                 </div>
@@ -366,7 +367,7 @@ const OrderDetail = ({
                 </Grid>
             </Grid>
             {open && (
-                <BasicModal open={open} handleClose={() => setOpen(false)}>
+                <BasicModal open={open} handleClose={() => setOpen(false)} className="light__mode">
                     {type == 1 && (
                         <UpdateStatusModal
                             handleUpdate={handleUpdate}

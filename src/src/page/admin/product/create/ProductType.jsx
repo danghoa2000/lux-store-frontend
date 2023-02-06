@@ -24,7 +24,7 @@ const ProductType = (props) => {
     const [t] = useTranslation();
     return (
         <div className="card__admin">
-            <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10}>
+            <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10} className="dark__mode custom__form">
                 <Grid item xs={6}>
                     <Controller
                         name="group_category_id"

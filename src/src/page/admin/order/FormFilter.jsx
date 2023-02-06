@@ -81,6 +81,7 @@ const FormFilter = (props) => {
                                                     headCells[headCell].label
                                                 )}
                                                 size="small"
+                                                className="text-white"
                                             >
                                                 <MenuItem value={-1}>
                                                     {"select option"}
@@ -111,6 +112,7 @@ const FormFilter = (props) => {
                                                     headCells[headCell].label
                                                 )}
                                                 size="small"
+                                                className="text-white"
                                             >
                                                 <MenuItem key={""} value={-1}>
                                                     {"select option"}
@@ -331,6 +333,7 @@ const FormFilter = (props) => {
                     container
                     sx={{ margin: 0, padding: 1, width: "100%" }}
                     spacing={10}
+                    className="dark__mode custom__form"
                 >
                     {FORM_FILTER}
                     <div className="d-flex w-100">

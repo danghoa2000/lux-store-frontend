@@ -13,7 +13,6 @@ const UpdateStatusModal = ({handleUpdate, handleSubmit, control, loading}) => {
                 variant="h6"
                 component="h2"
                 textAlign={"center"}
-                color="#fff"
             >
                 Update order progress
             </Typography>
@@ -21,6 +20,7 @@ const UpdateStatusModal = ({handleUpdate, handleSubmit, control, loading}) => {
                 container
                 sx={{ margin: 0, padding: 1, width: "100%" }}
                 spacing={10}
+                className="custom__form"
             >
                 <Grid item xs={12}>
                     <Controller

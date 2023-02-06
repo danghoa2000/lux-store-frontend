@@ -88,6 +88,7 @@ const AccountCreate = (props) => {
                         container
                         sx={{ margin: 0, padding: 1, width: "100%" }}
                         spacing={10}
+                        className="dark__mode custom__form"
                     >
                         <Grid item xs={6}>
                             <Controller
@@ -214,6 +215,7 @@ const AccountCreate = (props) => {
                         container
                         sx={{ margin: 0, padding: 1, width: "100%" }}
                         spacing={10}
+                        className="dark__mode custom__form"
                     >
                         <Grid item xs={6}>
                             <Controller
@@ -293,6 +295,7 @@ const AccountCreate = (props) => {
                                             }}
                                             label={"province"}
                                             size="small"
+                                            className="text-white"
                                         >
                                             <MenuItem value={-1}>
                                                 {"select province"}
@@ -332,6 +335,7 @@ const AccountCreate = (props) => {
                                             }}
                                             label={"district_id"}
                                             size="small"
+                                            className="text-white"
                                         >
                                             <MenuItem value={-1}>
                                                 {"select district"}
@@ -370,6 +374,7 @@ const AccountCreate = (props) => {
                                             {...field}
                                             label={"commune_id"}
                                             size="small"
+                                            className="text-white"
                                         >
                                             <MenuItem value={-1}>
                                                 {"select commune"}
@@ -396,7 +401,7 @@ const AccountCreate = (props) => {
                                 render={({ field }) => (
                                     <FormControl variant="standard">
                                         <TextField
-                                            className="text-white"
+                                            className="text-white dark_mode_bored"
                                             id="address"
                                             {...field}
                                             placeholder="Enter your address"
@@ -431,6 +436,7 @@ const AccountCreate = (props) => {
                         container
                         sx={{ margin: 0, padding: 1, width: "100%" }}
                         spacing={10}
+                        className="dark__mode custom__form"
                     >
                         <Grid item xs={6}>
                             <div className="d-inline">

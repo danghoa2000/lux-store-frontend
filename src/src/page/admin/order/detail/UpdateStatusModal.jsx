@@ -21,6 +21,7 @@ const UpdateStatusModal = ({handleUpdate, handleSubmit, control, loading}) => {
                 container
                 sx={{ margin: 0, padding: 1, width: "100%" }}
                 spacing={10}
+                className="dark__mode custom__form"
             >
                 <Grid item xs={12}>
                     <Controller

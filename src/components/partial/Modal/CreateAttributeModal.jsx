@@ -76,7 +76,7 @@ const CreateAttributeModal = ({
                 Create new Attribute
             </Typography>
             <form>
-                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10}>
+                <Grid container sx={{ margin: 0, padding: 1, width: '100%' }} spacing={10} className="dark__mode custom__form">
                     <Grid item xs={12}>
                         <Controller
                             name="group_category_id"
@@ -87,6 +87,7 @@ const CreateAttributeModal = ({
                                         {...field}
                                         label={<div>{t('product.list.table.group_category_id')}<span className='required'></span></div>}
                                         size="small"
+                                        className="text-white"
                                     >
                                         <MenuItem key={""} value={-1}>
                                             {"select group category"}

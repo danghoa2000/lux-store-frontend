@@ -80,7 +80,8 @@ const OrderDetailContainer = () => {
                 }
                 setOpen(false);
             })
-            .catch(({ response }) => {
+            .catch(( response ) => {
+                console.log(response)
                 setStatus({
                     type: "error",
                     message: response.data
