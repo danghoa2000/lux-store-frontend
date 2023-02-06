@@ -1,5 +1,5 @@
-export const API_BASE_URL = "https://lux-store.herokuapp.com/";
-export const API_BACKEND_URL = "https://lux-store-backend.herokuapp.com/";
+export const API_BASE_URL = "http://127.0.0.1:8000/";
+export const API_BACKEND_URL = "http://127.0.0.1:8000/";
 
 export const LOGIN_API = {
     LOGIN: API_BACKEND_URL + "api/auth/login",
