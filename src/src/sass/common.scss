@@ -412,32 +412,32 @@ input::-webkit-inner-spin-button {
     color: rgb(233, 69, 96);
 }
 
-// .ligth__mode {
-//     // &.css-1glvl0p-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator,
-//     // &.css-6wwd73-MuiAutocomplete-noOptions,
-//     // &.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
-//     // &.css-8q2m5j-MuiInputBase-root-MuiInput-root,
-//     &.css-10by3a5-MuiButtonBase-root-MuiMenuItem-root-MuiTablePagination-menuItem,
-//     &.css-jd1zyo-MuiSelect-select-MuiInputBase-input-MuiInput-input.MuiSelect-select,
-//     &.css-1mf6u8l-MuiSvgIcon-root-MuiSelect-icon,
-//     &.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon,
-//     // &.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root,
-//     // &.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root,
-//     // &.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root,
-//     // &.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root,
-//     &.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root 
-//     // &.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active, 
-//     // &.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active 
-//     // &.MuiTableSortLabel-icon, 
-//     // &.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root:hover, 
-//     // &.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active:hover
-//     {
-//         color: rgba(0, 0, 0, 0.6) !important;
-//     }
-//     &.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
-//         color: #1976d2 !important;
-//     }
-// }
+.ligth__mode {
+    // &.css-1glvl0p-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator,
+    // &.css-6wwd73-MuiAutocomplete-noOptions,
+    // &.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root,
+    // &.css-8q2m5j-MuiInputBase-root-MuiInput-root,
+    &.css-10by3a5-MuiButtonBase-root-MuiMenuItem-root-MuiTablePagination-menuItem,
+    &.css-jd1zyo-MuiSelect-select-MuiInputBase-input-MuiInput-input.MuiSelect-select,
+    &.css-1mf6u8l-MuiSvgIcon-root-MuiSelect-icon,
+    &.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon,
+    // &.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root,
+    // &.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root,
+    // &.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root,
+    // &.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root,
+    &.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root 
+    // &.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active, 
+    // &.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active 
+    // &.MuiTableSortLabel-icon, 
+    // &.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root:hover, 
+    // &.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active:hover
+    {
+        color: rgba(0, 0, 0, 0.6) !important;
+    }
+    &.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+        color: #1976d2 !important;
+    }
+}
 
 label.active {
     color: #e94560;
@@ -512,11 +512,11 @@ label.active {
     //     color: #1976d2 !important;
     // }
 
-    // .css-s7asi4 {
-    //     background-color: #fff;
-    //     box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
-    //     border-color: #fff;
-    // }
+    .MuiBox-root {
+        background-color: #fff;
+        box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+        border-color: #fff;
+    }
 
     // .custom__form > .MuiGrid-item {
     //     padding: 5px !important;

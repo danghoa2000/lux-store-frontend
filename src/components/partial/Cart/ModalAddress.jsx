@@ -141,13 +141,13 @@ const ModalAddress = ({
                             </div>
                             <div className="address__tool">
                                 <div className="d-flex">
-                                    <span
+                                    {/* <span
                                         className="change"
                                         style={{ marginRight: 3 }}
                                         // onClick={() => }
                                     >
                                         update
-                                    </span>
+                                    </span> */}
                                     <span
                                         className="change"
                                         style={{ marginLeft: 3 }}

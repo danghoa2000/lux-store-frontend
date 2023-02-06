@@ -86,7 +86,7 @@ const CartStep = ({
                 <h2>Cart Summary</h2>
                 <div className="d-flex" style={{ alignItems: "center" }}>
                     <h4>Total Price :</h4>
-                    <h3> {formatPrice(totalPrice)}</h3>
+                    <h4 style={{ fontSize: 20, color: "#e94560" }}> {formatPrice(totalPrice)}</h4>
                 </div>
                 <Button
                     variant="contained"
