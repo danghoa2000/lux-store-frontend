@@ -118,6 +118,7 @@ const ModalCreateAddress = ({
                     container
                     sx={{ margin: 0, padding: 1, width: "100%" }}
                     spacing={10}
+                    className="custom__form"
                 >
                     <Grid item xs={6}>
                         <Controller
