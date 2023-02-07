@@ -76,13 +76,18 @@ const CategoryUpdateContainer = () => {
             ...value
         })
             .then((response) => {
+                setShowNoti(true)
                 if (response.data.code === CODE.HTTP_OK) {
                     setStatus({ type: 'success', message: response.data.message });
+                    setTimeout(() => {
+                        navigate(-1);
+                    }, 1500);
                 }
                 if (response.data.code === CODE.HTTP_NOT_FOUND) {
                     setStatus({ type: 'error', message: response.data.message });
+                } else {
+                    setStatus({ type: 'error', message: 'error' });
                 };
-                setShowNoti(true)
                 setLoading(false);
             }).catch(({ response }) => {
                 if (response.data.code === CODE.UNPROCESSABLE_ENTITY) {

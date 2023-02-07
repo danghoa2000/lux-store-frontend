@@ -77,9 +77,11 @@ const AccountCreateContainer = () => {
                         type: "success",
                         message: response.data.message,
                     });
-                    reset();
+                    setShowNoti(true);
+                    setTimeout(() => {
+                        navigate(-1);
+                    }, 1500);
                 }
-                setShowNoti(true);
                 setLoading(false);
             })
             .catch(({ response }) => {

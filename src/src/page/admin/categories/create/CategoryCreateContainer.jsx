@@ -50,12 +50,15 @@ const CategoryCreateContainer = () => {
             ...value
         })
             .then((response) => {
-                if (response.data.code === CODE.HTTP_OK) {
-                    setStatus({ type: 'success', message: response.data.message });
-                    reset();
-                }
-                setShowNoti(true);
                 setLoading(false);
+                if (response.data.code === CODE.HTTP_OK) {
+                    setShowNoti(true);
+                    setStatus({ type: 'success', message: response.data.message });
+                    setTimeout(() => {
+                        navigate(-1);
+                    }, 1500);
+                }
+
             }).catch(({ response }) => {
                 if (response.data.code === CODE.UNPROCESSABLE_ENTITY) {
                     Object.keys(response.data.errors).forEach(element => {

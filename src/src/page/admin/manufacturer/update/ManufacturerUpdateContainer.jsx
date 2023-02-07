@@ -92,6 +92,9 @@ const ManufacturerUpdateContainer = () => {
                 };
                 setShowNoti(true)
                 setLoading(false);
+                setTimeout(() => {
+                    navigate(-1);
+                }, 1500);
             }).catch(({ response }) => {
                 if (response.data.code === CODE.UNPROCESSABLE_ENTITY) {
                     Object.keys(response.data.errors).forEach(element => {
