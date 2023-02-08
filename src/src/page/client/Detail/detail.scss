@@ -84,9 +84,9 @@ button.btn-add-product {
 .product__qty {
     width: 140px;
     height: 38px;
+    border-radius: 0;
 
     .MuiInputBase-input {
-        border-radius: 0;
         text-align: center;
     }
 }
