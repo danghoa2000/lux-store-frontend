@@ -82,7 +82,12 @@ button.btn-add-product {
 }
 
 .product__qty {
-    width: 50px;
+    width: 140px;
+    height: 38px;
+
+    .MuiInputBase-root {
+        border-radius: 0;
+    }
 }
 
 .homeSlide {

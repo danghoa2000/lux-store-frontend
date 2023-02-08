@@ -46,6 +46,6 @@ axiosClient.interceptors.request.use(function (config) {
 // );
 
 //All request will wait 2 seconds before timeout
-axiosClient.defaults.timeout = 5000;
+axiosClient.defaults.timeout = 20000;
 
 axios.defaults.withCredentials = false;
